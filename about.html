@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bro Pro Store </title>
+        <link rel="stylesheet" href="assets/css/style.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            body{
+                background: radial-gradient(#fff, #ffd6d6)
+            }
+            main{
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin: 40px;
+                padding: 40px;
+                font-family:"poppins";
+                line-height: 1.5 ;
+
+            }
+            main h2{
+                text-transform: uppercase;
+                font-weight: 600;
+                
+            }
+            main p{
+                font-weight:600 ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="Bro pro store logo" width=125px></a>
+                    </div>
+                    <nav> 
+                        <ul id="MenuItems"><!--use this id in js-->                   
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Products.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="menu"><a href="#">Categories<i class="fa fa-caret-down"></i></a>
+                                <ul class="dropdown">
+                                   <li><a href="mens.html">Mens</a></li>
+                                   <li><a href="womens.html">Womens</a></li>
+                                </ul>
+                              </li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><img src="assets/images/cart.png" alt="cart" width=30px height=30px></a>
+                    <img src="assets/images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/images/slider/slide1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/slider/slide2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/slider/slide3.webp" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+        <main id="about1">
+            <div id="img">
+                <img src="assets/images/trust.png" height="530px" width="500px">
+            </div>
+            
+            <div id="para">
+                <h2>who we are</h2>
+                <p>Welcome to Bro Pro Store, where passion meets performance, and style meets substance. At Bro Pro       Store, we're more than just a brand; we're a lifestyle dedicated to empowering individuals to unleash their full potential through the power of fitness and fashion.<br>
+                Established with a vision to redefine the boundaries of activewear, we've curated a collection that seamlessly blends cutting-edge technology with contemporary design. Our mission is simple: to inspire confidence, elevate performance, and amplify style for every workout warrior, from the gym floor to the urban streets.What sets us apart is our unwavering commitment to quality and innovation. Each piece in our collection is crafted with precision, using premium materials that offer unparalleled comfort, durability, and functionality.
+                <br>
+                At Bro Pro Store, we're more than just a brand we're a community. We're a tribe of athletes, adventurers, and dreamers who refuse to settle for mediocrity and strive for excellence in everything we do. We believe that fitness is not just a destination, but a journey and we're here to support you every step of the way.So whether you're a seasoned athlete or a weekend warrior, a fitness fanatic or a casual gym-goer, welcome to the Bro pro store family. Together, let's redefine the limits of what's possible and unleash the athlete within.<br>
+                
+                Join the movement. Embrace the journey. Elevate your performance. This is Bro Pro Store.<br>
+                
+                Unleash Your Potential.
+                </p>
+
+            </div>    
+        </main>
+        <div id="testimonials">
+            <div class="test">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit omnis itaque exercitationem quasi deleniti culpa aut facilis illo, necessitatibus impedit.</p>
+                <img src="assets/images/men1.jpg" height="100px" >
+                <h4>John Wick</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+            <div class="test">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit omnis itaque exercitationem quasi deleniti culpa aut facilis illo, necessitatibus impedit.</p>
+                <img src="assets/images/men2.jpg" height="100px">
+                <h4>Sonam Bajwa</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Android and Ios mobile phone.</p>
+                            <div class="app-logo">
+                                <img src="assets/images/play-store.png">
+                                <img src="assets/images/app-store.png">
+                            </div>  
+                            <img src="assets/images/menu.png" class="menu-icon" onclick="menutoggle()"> 
+                        
+                        </div>
+        
+                        <div class="footer-col-2">
+                            <img src="assets/images/logo.png">
+                            <p>Our purpose is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                        </div>
+        
+                        <div class="footer-col-3">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Coupons</li>
+                                <li>Blog Post</li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                            </ul>
+                            
+                        </div>
+        
+                        <div class="footer-col-4">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>Youtube</li>
+                            </ul>
+                            
+                        </div>
+                        <div id="scrollToTop">
+                            <a href="about.html"><i class="fa-solid fa-arrow-up" style="color: #ff4000;"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>        
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle()
+            {
+                if (MenuItems.style.maxHeight =="0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px" 
+                }
+            
+            }
+        </script>
+
+    </body>
+</html>
