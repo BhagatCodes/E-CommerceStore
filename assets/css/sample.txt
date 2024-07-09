@@ -1,0 +1,1 @@
+It contains a CSS file linked with every HTML page
